@@ -1,0 +1,208 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap";
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	&::before {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	&::after {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+}
+.icon-style {
+	position: relative;
+	display: table-cell;
+	width: 3.75rem;
+	height: 2.25rem;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.5rem;
+}
+.main-menu {
+	&:hover {
+		width: 15.625rem;
+		overflow: visible;
+	}
+	background: hsl(0, 0%, 13%);
+	border-right: 1px solid hsl(0, 0%, 90%);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	width: 3.75rem;
+	overflow: hidden;
+	-webkit-transition: width 0.05s linear;
+	transition: width 0.05s linear;
+	-webkit-transform: translateZ(0) scale(1, 1);
+	z-index: 1000;
+	>ul {
+		margin: 0.438rem 0;
+	}
+	li {
+		position: relative;
+		display: block;
+		width: 15.625rem;
+		>a {
+			position: relative;
+			display: table;
+			border-collapse: collapse;
+			border-spacing: 0;
+			color: hsl(0, 0%, 60%);
+			font-family: "Poppins", sans-serif;
+			font-size: 0.875rem;
+			text-decoration: none;
+			-webkit-transform: translateZ(0) scale(1, 1);
+			-webkit-transition: all 0.1s linear;
+			transition: all 0.1s linear;
+		}
+		&:hover {
+			>a {
+				color: hsl(0, 0%, 100%);
+				background-color: hsl(208, 63%, 62%);
+			}
+		}
+	}
+	.nav-icon {
+		position: relative;
+		display: table-cell;
+		width: 3.75rem;
+		height: 2.25rem;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 1.125rem;
+	}
+	.nav-text {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 11.875rem;
+		font-family: "Poppins", sans-serif;
+	}
+	>ul.logout {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+nav.main-menu.expanded {
+	width: 15.625rem;
+	overflow: visible;
+}
+.no-touch {
+	.scrollable.hover {
+		overflow-y: hidden;
+		&:hover {
+			overflow-y: auto;
+			overflow: visible;
+		}
+	}
+	.dashboard-page {
+		nav.dashboard-menu {
+			ul {
+				li {
+					&:hover {
+						a {
+							color: hsl(0, 0%, 100%);
+							background-color: hsl(208, 63%, 62%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+nav {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	ul {
+		outline: 0;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		outline: 0;
+		margin: 0;
+		padding: 0;
+	}
+}
+nav.main-menu {
+	li.active {
+		>a {
+			color: hsl(0, 0%, 100%);
+			background-color: hsl(208, 63%, 62%);
+		}
+	}
+}
+.dropdown-menu {
+	>li {
+		>a {
+			&:hover {
+				color: hsl(0, 0%, 100%);
+				background-color: hsl(208, 63%, 62%);
+			}
+			&:focus {
+				color: hsl(0, 0%, 100%);
+				background-color: hsl(208, 63%, 62%);
+			}
+		}
+	}
+	>.active {
+		>a {
+			color: hsl(0, 0%, 100%);
+			background-color: hsl(208, 63%, 62%);
+			&:hover {
+				color: hsl(0, 0%, 100%);
+				background-color: hsl(208, 63%, 62%);
+			}
+			&:focus {
+				color: hsl(0, 0%, 100%);
+				background-color: hsl(208, 63%, 62%);
+			}
+		}
+	}
+}
+.dashboard-page {
+	nav.dashboard-menu {
+		ul {
+			li.active {
+				a {
+					color: hsl(0, 0%, 100%);
+					background-color: hsl(208, 63%, 62%);
+				}
+			}
+		}
+	}
+}
+.area {
+	float: left;
+	background: hsl(0, 0%, 100%);
+	width: 100%;
+	height: 100%;
+	padding-left: 4.375rem;
+	padding-right: 2rem;
+	font-family: "Poppins", sans-serif;
+	>h1 {
+		padding-bottom: 1.5rem;
+	}
+	>p {
+		font-size: 1rem;
+		padding-bottom: 1rem;
+	}
+}
