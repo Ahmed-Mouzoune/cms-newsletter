@@ -12,20 +12,25 @@ export default function Sidebar() {
             <nav className="main-menu">
                 <ul>
                     {links.map((link : any, i : number) => (
-                        <li>
+                        <li key={i}>
                             <Link
                                 to={link.url}
-                                key={i}
                             >
-                                <span className={`bi bi-${link.icon} icon-style`}>{link.icon}</span>
+                                <span className={`bi bi-${link.icon} icon-style`}></span>
                                 <span className="nav-text">{link.name}</span>
                             </Link>
                         </li>
                     ))}
                 </ul>
                 <ul className="logout">
-                    <li><a href="#"><span className="material-icons icon-style">logout</span><span
-                                className="nav-text">Logout</span></a></li>
+                    <li>
+                        <a href="#">
+                            <span className="bi bi-box-arrow-in-left icon-style"></span><span
+                                className="nav-text">
+                                    Logout
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </>

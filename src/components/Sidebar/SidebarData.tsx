@@ -2,22 +2,27 @@ let links = [
     {
         url: `/invoices`,
         name: "Menu",
-        icon: "invoices",
+        icon: "house",
     },
     {
         url: `/templates`,
         name: "Templates",
-        icon: "Templates",
+        icon: "inboxes",
     },
     {
         url: `/editor`,
-        name: "editor",
-        icon: "editor",
+        name: "Editor",
+        icon: "pencil-square",
+    },
+    {
+        url: `/send`,
+        name: "Envoi",
+        icon: "envelope",
     },
     {
         url: `/404`,
-        name: "Menu",
-        icon: "404",
+        name: "404",
+        icon: "bug",
     },
 ];
 export function getLinks() {
